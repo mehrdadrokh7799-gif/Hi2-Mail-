@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+requests
+Flask
+qrcode[pil]
+Pillow
+gunicorn
