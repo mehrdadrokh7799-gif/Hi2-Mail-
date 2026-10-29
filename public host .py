@@ -1545,11 +1545,11 @@ def command_send_welcome(message):
             file_id = user_profile_photos.photos[0][-1].file_id
             bot.send_photo(message.chat.id, file_id, caption=welcome_text,
                           reply_markup=create_reply_keyboard_main_menu(user_id),
-                          parse_mode='Markdown')
+                          parse_mode=None)
         else:
             bot.send_message(message.chat.id, welcome_text,
                            reply_markup=create_reply_keyboard_main_menu(user_id),
-                           parse_mode='Markdown')
+                           parse_mode=None)
     
     except Exception as e:
         # 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤 𝐢𝐟 𝐜𝐚𝐧'𝐭 𝐠𝐞𝐭 𝐩𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐡𝐨𝐭𝐨
@@ -1582,7 +1582,7 @@ def command_send_welcome(message):
 """)
         bot.send_message(message.chat.id, welcome_text,
                        reply_markup=create_reply_keyboard_main_menu(user_id),
-                       parse_mode='Markdown')
+                       parse_mode=None)
 
 @bot.message_handler(commands=['help'])
 def command_help(message):
