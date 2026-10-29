@@ -4,4 +4,3 @@ Flask
 qrcode[pil]
 Pillow
 gunicorn
-gunicorn
